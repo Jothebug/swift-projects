@@ -14,7 +14,15 @@ struct HomeScreen: View {
     
     var body: some View {
         ZStack {
-            Map(coordinateRegion: $vm.mapRegion)
+            Map(
+                coordinateRegion: $vm.mapRegion,
+                annotationItems: vm.locations,
+                annotationContent: { location in
+                    MapAnnotation(coordinate: location.coordinates) {
+                        LocationAnnotation()
+                            .scaleEffect(vm.mapLocation == location ? 1 : 0.7)
+                    }
+                })
                 .ignoresSafeArea()
         }
     }
