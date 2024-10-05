@@ -9,20 +9,22 @@
 /* Begin PBXBuildFile section */
 		B50F944A2CAEF7520068A4D6 /* DataLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50F94492CAEF7520068A4D6 /* DataLocation.swift */; };
 		B543F2B72CAEF55100024D5A /* TouristMapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B543F2B62CAEF55100024D5A /* TouristMapApp.swift */; };
-		B543F2B92CAEF55100024D5A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B543F2B82CAEF55100024D5A /* ContentView.swift */; };
 		B543F2BB2CAEF55200024D5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B543F2BA2CAEF55200024D5A /* Assets.xcassets */; };
 		B543F2BE2CAEF55200024D5A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B543F2BD2CAEF55200024D5A /* Preview Assets.xcassets */; };
 		B543F2C92CAEF67F00024D5A /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = B543F2C82CAEF67F00024D5A /* Location.swift */; };
+		B55F80C02CB1866000AE9369 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F80BF2CB1866000AE9369 /* HomeScreen.swift */; };
+		B55F80C22CB1880A00AE9369 /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F80C12CB1880A00AE9369 /* LocationsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B50F94492CAEF7520068A4D6 /* DataLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLocation.swift; sourceTree = "<group>"; };
 		B543F2B32CAEF55100024D5A /* TouristMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouristMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B543F2B62CAEF55100024D5A /* TouristMapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouristMapApp.swift; sourceTree = "<group>"; };
-		B543F2B82CAEF55100024D5A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B543F2BA2CAEF55200024D5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B543F2BD2CAEF55200024D5A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B543F2C82CAEF67F00024D5A /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		B55F80BF2CB1866000AE9369 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		B55F80C12CB1880A00AE9369 /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +62,6 @@
 				B543F2C52CAEF5A800024D5A /* Models */,
 				B543F2C42CAEF5A000024D5A /* Views */,
 				B543F2B62CAEF55100024D5A /* TouristMapApp.swift */,
-				B543F2B82CAEF55100024D5A /* ContentView.swift */,
 				B543F2BA2CAEF55200024D5A /* Assets.xcassets */,
 				B543F2BC2CAEF55200024D5A /* Preview Content */,
 			);
@@ -78,6 +79,7 @@
 		B543F2C42CAEF5A000024D5A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B55F80BF2CB1866000AE9369 /* HomeScreen.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -101,6 +103,7 @@
 		B543F2C72CAEF5BD00024D5A /* ViewsModel */ = {
 			isa = PBXGroup;
 			children = (
+				B55F80C12CB1880A00AE9369 /* LocationsViewModel.swift */,
 			);
 			path = ViewsModel;
 			sourceTree = "<group>";
@@ -176,9 +179,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B50F944A2CAEF7520068A4D6 /* DataLocation.swift in Sources */,
-				B543F2B92CAEF55100024D5A /* ContentView.swift in Sources */,
+				B55F80C02CB1866000AE9369 /* HomeScreen.swift in Sources */,
 				B543F2C92CAEF67F00024D5A /* Location.swift in Sources */,
 				B543F2B72CAEF55100024D5A /* TouristMapApp.swift in Sources */,
+				B55F80C22CB1880A00AE9369 /* LocationsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

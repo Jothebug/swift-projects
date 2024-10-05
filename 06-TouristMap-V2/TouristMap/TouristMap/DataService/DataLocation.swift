@@ -8,8 +8,8 @@
 import Foundation
 import MapKit
 
-class DataLocation {
-	let locations: [Location] = [
+class DataLocations {
+     static let locations: [Location] = [
 		Location(
 			name: "Colosseum",
 			cityName: "Rome",
