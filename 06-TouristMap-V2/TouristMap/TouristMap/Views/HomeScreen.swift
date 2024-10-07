@@ -14,29 +14,10 @@ struct HomeScreen: View {
     var body: some View {
         ZStack {
             mapLayer.ignoresSafeArea()
-            VStack {
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                    Text("Test location")
-                        .font(.title2)
-                        .fontWeight(.black)
-                        .foregroundColor(.primary)
-                        .frame(height: 55)
-                        .frame(maxWidth: .infinity)
-                        .overlay {
-                            Image(systemName: "arrow.down")
-                                .font(.headline)
-                                .foregroundColor(.primary)
-                                .padding()
-                                .rotationEffect(Angle(degrees:180))
-                        }
-                })
+            VStack(spacing: 0) {
+                mapHeader
+                Spacer()
             }
-            .background(.thickMaterial)
-            .cornerRadius(10)
-            .shadow(
-                color: Color.black.opacity(0.3), radius: 20,
-                x: 0, y: 15
-            )
         }
     }
 }
@@ -57,5 +38,32 @@ extension HomeScreen {
                         .scaleEffect(vm.mapLocation == location ? 1 : 0.7)
                 }
             })
+    }
+    
+    private var mapHeader: some View {
+        VStack {
+            Button(action: vm.toggleList, label: {
+                Text("\(vm.mapLocation.name), \(vm.mapLocation.cityName)")
+                    .font(.title2)
+                    .fontWeight(.black)
+                    .foregroundColor(.primary)
+                    .frame(height: 55)
+                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                    .overlay(alignment: .leading) {
+                        Image(systemName: "arrow.down")
+                            .font(.headline)
+                            .foregroundColor(.primary)
+                            .padding(.horizontal, 15)
+                            .rotationEffect(Angle(degrees: vm.showListHeader ? 180 : 0 ))
+                    }
+            })
+        }
+        .background(.thickMaterial)
+        .cornerRadius(10)
+        .shadow(
+            color: Color.black.opacity(0.3), 
+            radius: 20,
+            x: 0, y: 15
+        )
     }
 }

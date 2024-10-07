@@ -10,7 +10,6 @@ import SwiftUI
 struct LocationAnnotation: View {
     let iconColor = Color("AccentColor")
     let circleSize: CGFloat = 40
-    
     var body: some View {
         VStack(spacing: 0) {
             ZStack {
