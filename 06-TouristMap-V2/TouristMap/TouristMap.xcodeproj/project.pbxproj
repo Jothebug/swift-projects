@@ -15,6 +15,7 @@
 		B55F80C02CB1866000AE9369 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F80BF2CB1866000AE9369 /* HomeScreen.swift */; };
 		B55F80C22CB1880A00AE9369 /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F80C12CB1880A00AE9369 /* LocationsViewModel.swift */; };
 		B55F80C42CB1972200AE9369 /* LocationAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F80C32CB1972200AE9369 /* LocationAnnotation.swift */; };
+		B5D737982CB42CD200FFA54D /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D737972CB42CD200FFA54D /* Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		B55F80BF2CB1866000AE9369 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		B55F80C12CB1880A00AE9369 /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
 		B55F80C32CB1972200AE9369 /* LocationAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAnnotation.swift; sourceTree = "<group>"; };
+		B5D737972CB42CD200FFA54D /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 		B543F2B52CAEF55100024D5A /* TouristMap */ = {
 			isa = PBXGroup;
 			children = (
+				B5D737962CB42C6500FFA54D /* Helpers */,
 				B543F2C72CAEF5BD00024D5A /* ViewsModel */,
 				B543F2C62CAEF5B200024D5A /* DataService */,
 				B543F2C52CAEF5A800024D5A /* Models */,
@@ -109,6 +112,14 @@
 				B55F80C12CB1880A00AE9369 /* LocationsViewModel.swift */,
 			);
 			path = ViewsModel;
+			sourceTree = "<group>";
+		};
+		B5D737962CB42C6500FFA54D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B5D737972CB42CD200FFA54D /* Helpers.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B50F944A2CAEF7520068A4D6 /* DataLocation.swift in Sources */,
+				B5D737982CB42CD200FFA54D /* Helpers.swift in Sources */,
 				B55F80C02CB1866000AE9369 /* HomeScreen.swift in Sources */,
 				B543F2C92CAEF67F00024D5A /* Location.swift in Sources */,
 				B543F2B72CAEF55100024D5A /* TouristMapApp.swift in Sources */,

@@ -10,7 +10,6 @@ import MapKit
 
 struct HomeScreen: View {
     @EnvironmentObject private var vm: LocationsViewModel
-    
     var body: some View {
         ZStack {
             mapLayer.ignoresSafeArea()
@@ -41,29 +40,32 @@ extension HomeScreen {
     }
     
     private var mapHeader: some View {
-        VStack {
-            Button(action: vm.toggleList, label: {
-                Text("\(vm.mapLocation.name), \(vm.mapLocation.cityName)")
-                    .font(.title2)
-                    .fontWeight(.black)
-                    .foregroundColor(.primary)
-                    .frame(height: 55)
-                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
-                    .overlay(alignment: .leading) {
+        Button(action: vm.toggleList, label: {
+            Rectangle()
+                .fill(.thinMaterial)
+                .frame(height: 55)
+                .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                .overlay(alignment: .leading) {
+                    HStack(spacing: 0) {
                         Image(systemName: "arrow.down")
                             .font(.headline)
                             .foregroundColor(.primary)
-                            .padding(.horizontal, 15)
                             .rotationEffect(Angle(degrees: vm.showListHeader ? 180 : 0 ))
+                        Spacer()
+                        Text("\(vm.mapLocation.name), \(vm.mapLocation.cityName)")
+                            .font(.title2)
+                            .fontWeight(.black)
+                            .foregroundColor(.primary)
+                        Spacer()
                     }
-            })
-        }
-        .background(.thickMaterial)
-        .cornerRadius(10)
-        .shadow(
-            color: Color.black.opacity(0.3), 
-            radius: 20,
-            x: 0, y: 15
-        )
+                    .padding(.horizontal, 15)
+                }
+                .shadow(
+                    color: Color.black.opacity(0.3),
+                    radius: 20,
+                    x: 0, y: 15
+                )
+        })
+        .buttonStyle(NoPressEffectButtonStyle())
     }
 }
