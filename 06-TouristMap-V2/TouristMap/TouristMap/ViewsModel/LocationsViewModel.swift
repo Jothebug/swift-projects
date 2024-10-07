@@ -40,4 +40,11 @@ class LocationsViewModel: ObservableObject {
             showListHeader = !showListHeader
         }
     }
+    
+    func pressLocation(location: Location) {
+        withAnimation(.easeInOut) {
+            mapLocation = location
+            showListHeader = false
+        }
+    }
 }
