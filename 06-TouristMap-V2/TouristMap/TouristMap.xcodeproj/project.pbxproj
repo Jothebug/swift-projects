@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B50F944A2CAEF7520068A4D6 /* DataLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50F94492CAEF7520068A4D6 /* DataLocation.swift */; };
+		B517727B2CB5986700D2FC14 /* LocationDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B517727A2CB5986700D2FC14 /* LocationDetail.swift */; };
 		B543F2B72CAEF55100024D5A /* TouristMapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B543F2B62CAEF55100024D5A /* TouristMapApp.swift */; };
 		B543F2BB2CAEF55200024D5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B543F2BA2CAEF55200024D5A /* Assets.xcassets */; };
 		B543F2BE2CAEF55200024D5A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B543F2BD2CAEF55200024D5A /* Preview Assets.xcassets */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		B50F94492CAEF7520068A4D6 /* DataLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLocation.swift; sourceTree = "<group>"; };
+		B517727A2CB5986700D2FC14 /* LocationDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetail.swift; sourceTree = "<group>"; };
 		B543F2B32CAEF55100024D5A /* TouristMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouristMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B543F2B62CAEF55100024D5A /* TouristMapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouristMapApp.swift; sourceTree = "<group>"; };
 		B543F2BA2CAEF55200024D5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				B55F80C32CB1972200AE9369 /* LocationAnnotation.swift */,
 				B5D737992CB4321600FFA54D /* LocationsList.swift */,
 				B5BFDD282CB57A7D000C5950 /* LocationPreview.swift */,
+				B517727A2CB5986700D2FC14 /* LocationDetail.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				B55F80C22CB1880A00AE9369 /* LocationsViewModel.swift in Sources */,
 				B5D7379A2CB4321600FFA54D /* LocationsList.swift in Sources */,
 				B55F80C42CB1972200AE9369 /* LocationAnnotation.swift in Sources */,
+				B517727B2CB5986700D2FC14 /* LocationDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

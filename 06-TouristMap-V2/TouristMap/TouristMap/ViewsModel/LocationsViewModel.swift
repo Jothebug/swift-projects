@@ -18,6 +18,7 @@ class LocationsViewModel: ObservableObject {
     
     @Published var showListHeader: Bool = false
     @Published var mapRegion: MKCoordinateRegion = MKCoordinateRegion()
+    @Published var mapSpan: MKCoordinateSpan = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
     
     init() {
         let locations = DataLocations.locations
@@ -31,7 +32,7 @@ class LocationsViewModel: ObservableObject {
         withAnimation(.easeInOut) {
             mapRegion = MKCoordinateRegion(
                 center: location.coordinates,
-                span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1))
+                span: mapSpan)
         }
     }
     
