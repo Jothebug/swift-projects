@@ -15,6 +15,7 @@
 		B55F80C02CB1866000AE9369 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F80BF2CB1866000AE9369 /* HomeScreen.swift */; };
 		B55F80C22CB1880A00AE9369 /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F80C12CB1880A00AE9369 /* LocationsViewModel.swift */; };
 		B55F80C42CB1972200AE9369 /* LocationAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F80C32CB1972200AE9369 /* LocationAnnotation.swift */; };
+		B5BFDD292CB57A7D000C5950 /* LocationPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BFDD282CB57A7D000C5950 /* LocationPreview.swift */; };
 		B5D737982CB42CD200FFA54D /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D737972CB42CD200FFA54D /* Helpers.swift */; };
 		B5D7379A2CB4321600FFA54D /* LocationsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D737992CB4321600FFA54D /* LocationsList.swift */; };
 /* End PBXBuildFile section */
@@ -29,6 +30,7 @@
 		B55F80BF2CB1866000AE9369 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		B55F80C12CB1880A00AE9369 /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
 		B55F80C32CB1972200AE9369 /* LocationAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAnnotation.swift; sourceTree = "<group>"; };
+		B5BFDD282CB57A7D000C5950 /* LocationPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPreview.swift; sourceTree = "<group>"; };
 		B5D737972CB42CD200FFA54D /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		B5D737992CB4321600FFA54D /* LocationsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,6 +91,7 @@
 				B55F80BF2CB1866000AE9369 /* HomeScreen.swift */,
 				B55F80C32CB1972200AE9369 /* LocationAnnotation.swift */,
 				B5D737992CB4321600FFA54D /* LocationsList.swift */,
+				B5BFDD282CB57A7D000C5950 /* LocationPreview.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B50F944A2CAEF7520068A4D6 /* DataLocation.swift in Sources */,
+				B5BFDD292CB57A7D000C5950 /* LocationPreview.swift in Sources */,
 				B5D737982CB42CD200FFA54D /* Helpers.swift in Sources */,
 				B55F80C02CB1866000AE9369 /* HomeScreen.swift in Sources */,
 				B543F2C92CAEF67F00024D5A /* Location.swift in Sources */,

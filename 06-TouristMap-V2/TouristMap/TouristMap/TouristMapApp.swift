@@ -9,9 +9,7 @@ import SwiftUI
 
 @main
 struct TouristMapApp: App {
-    
     @StateObject private var vm = LocationsViewModel()
-    
     var body: some Scene {
         WindowGroup {
             HomeScreen()

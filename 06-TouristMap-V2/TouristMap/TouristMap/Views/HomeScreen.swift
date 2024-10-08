@@ -10,13 +10,13 @@ import MapKit
 
 struct HomeScreen: View {
     @EnvironmentObject private var vm: LocationsViewModel
-    
     var body: some View {
         ZStack {
             mapLayer.ignoresSafeArea()
             VStack {
                 mapHeader
                 Spacer()
+                LocationPreview()
             }
         }
     }
@@ -69,7 +69,6 @@ extension HomeScreen {
                     )
             })
             .buttonStyle(NoPressEffectButtonStyle())
-            
             if vm.showListHeader {
                 LocationsList()
             }
