@@ -19,6 +19,7 @@ class LocationsViewModel: ObservableObject {
     @Published var showListHeader: Bool = false
     @Published var mapRegion: MKCoordinateRegion = MKCoordinateRegion()
     @Published var mapSpan: MKCoordinateSpan = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
+    @Published var sheetLocation: Location? = nil
     
     init() {
         let locations = DataLocations.locations

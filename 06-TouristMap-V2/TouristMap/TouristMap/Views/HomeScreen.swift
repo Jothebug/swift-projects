@@ -19,6 +19,9 @@ struct HomeScreen: View {
                 LocationPreview()
             }
         }
+        .sheet(item: $vm.sheetLocation, onDismiss: nil) { location in
+            LocationDetail(location: location)
+        }
     }
 }
 

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct LocationPreview: View {
     @EnvironmentObject private var vm: LocationsViewModel
+    
     var body: some View {
         ZStack {
             ForEach(vm.locations) { location in
@@ -79,7 +80,9 @@ extension LocationPreview {
     
     private var renderLearnMore: some View {
         Button (
-            action: {},
+            action: {
+                vm.sheetLocation = vm.mapLocation
+            },
             label: {
                 Text("Learn more")
                     .font(.headline)
