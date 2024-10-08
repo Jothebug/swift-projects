@@ -10,25 +10,13 @@ import SwiftUI
 struct LocationPreview: View {
     @EnvironmentObject private var vm: LocationsViewModel
     var body: some View {
-        HStack(alignment: .bottom){
-            VStack(alignment: .leading) {
-                renderAvatar
-                renderLocationName
-            }
-            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
-            
-            VStack {
-                renderLearnMore
-                renderNextButton
+        ZStack {
+            ForEach(vm.locations) { location in
+                if vm.mapLocation == location {
+                    renderCard
+                }
             }
         }
-        .padding(15)
-        .background(
-            RoundedRectangle(cornerRadius: 10)
-                .fill(.ultraThinMaterial)
-                .offset(y: 50)
-        )
-        .cornerRadius(10)
     }
 }
 
@@ -42,6 +30,27 @@ struct LocationPreview: View {
 }
 
 extension LocationPreview {
+    private var renderCard: some View {
+        HStack(alignment: .bottom) {
+            VStack(alignment: .leading) {
+                renderAvatar
+                renderLocationName
+            }
+            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
+            VStack {
+                renderLearnMore
+                renderNextButton
+            }
+        }
+        .padding(15)
+        .background(
+            RoundedRectangle(cornerRadius: 10)
+                .fill(.ultraThinMaterial)
+                .offset(y: 50)
+        )
+        .cornerRadius(10)
+    }
+    
     private var renderAvatar: some View {
         Rectangle()
             .fill(.white)
