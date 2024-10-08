@@ -41,10 +41,26 @@ class LocationsViewModel: ObservableObject {
         }
     }
     
-    func pressLocation(location: Location) {
+    func showNextLocation(location: Location) {
         withAnimation(.easeInOut) {
             mapLocation = location
             showListHeader = false
         }
+    }
+    
+    func pressNextButton() {
+        guard let currentIndex = locations.firstIndex(where: { location in
+            location == mapLocation
+        }) else { return }
+        
+        let nextIndex = currentIndex + 1
+        guard locations.indices.contains(nextIndex) else {
+            guard let firstLocation = locations.first else {return}
+            showNextLocation(location: firstLocation)
+            return
+        }
+        
+        let nextLocation = locations[nextIndex]
+        showNextLocation(location: nextLocation)
     }
 }

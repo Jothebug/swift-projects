@@ -91,11 +91,12 @@ extension LocationPreview {
        
        private var renderNextButton: some View {
            Button (
-               action: {},
-               label: {
-                   Text("Next")
-                       .font(.headline)
-                       .frame(width: 125, height: 35)}
+            action: {
+                vm.pressNextButton()
+            }, label: {
+                Text("Next")
+                    .font(.headline)
+                .frame(width: 125, height: 35)}
            )
            .buttonStyle(.bordered)
        }

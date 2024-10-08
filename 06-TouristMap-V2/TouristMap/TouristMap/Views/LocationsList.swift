@@ -14,7 +14,7 @@ struct LocationsList: View {
         List {
             ForEach(vm.locations) { location in
                 Button(action: {
-                    vm.pressLocation(location: location)
+                    vm.showNextLocation(location: location)
                 }, label: {
                     cardView(location: location)
                         .padding(.vertical, 2)
