@@ -50,6 +50,9 @@ extension LocationPreview {
                 .offset(y: 50)
         )
         .cornerRadius(10)
+        .transition(.asymmetric(
+            insertion: .move(edge: .trailing),
+            removal: .move(edge: .leading)))
     }
     
     private var renderAvatar: some View {

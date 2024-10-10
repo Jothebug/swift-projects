@@ -11,11 +11,10 @@ import MapKit
 struct LocationDetail: View {
     @EnvironmentObject private var vm: LocationsViewModel
     @State var currentAmount: CGFloat = 0
-    
     let location: Location
     
     var body: some View {
-        ScrollView {
+        ScrollView(showsIndicators: false) {
             renderImages
             VStack(alignment: .leading, spacing: 16){
                 renderName
