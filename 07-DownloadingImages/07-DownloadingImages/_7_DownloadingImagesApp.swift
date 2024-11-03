@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct _7_DownloadingImagesApp: App {
+    @StateObject var vm = DownloadingImagesViewModel()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            DownloadingImages()
+                .environmentObject(vm)
         }
     }
 }
