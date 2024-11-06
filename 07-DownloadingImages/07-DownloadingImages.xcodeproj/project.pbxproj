@@ -17,6 +17,8 @@
 		B585A81A2CD7505500382A4F /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B585A8192CD7505500382A4F /* PhotoModel.swift */; };
 		B585A81C2CD750C600382A4F /* DownloadingImagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B585A81B2CD750C600382A4F /* DownloadingImagesViewModel.swift */; };
 		B585A81E2CD751FB00382A4F /* PhotoModelDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B585A81D2CD751FB00382A4F /* PhotoModelDataService.swift */; };
+		B5E9B14E2CDB8129009CA22D /* PhotoModelCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E9B14D2CDB8129009CA22D /* PhotoModelCacheManager.swift */; };
+		B5E9B1502CDB820B009CA22D /* PhotoModelFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E9B14F2CDB820B009CA22D /* PhotoModelFileManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		B585A8192CD7505500382A4F /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
 		B585A81B2CD750C600382A4F /* DownloadingImagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadingImagesViewModel.swift; sourceTree = "<group>"; };
 		B585A81D2CD751FB00382A4F /* PhotoModelDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModelDataService.swift; sourceTree = "<group>"; };
+		B5E9B14D2CDB8129009CA22D /* PhotoModelCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModelCacheManager.swift; sourceTree = "<group>"; };
+		B5E9B14F2CDB820B009CA22D /* PhotoModelFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModelFileManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,8 @@
 			isa = PBXGroup;
 			children = (
 				B585A81D2CD751FB00382A4F /* PhotoModelDataService.swift */,
+				B5E9B14D2CDB8129009CA22D /* PhotoModelCacheManager.swift */,
+				B5E9B14F2CDB820B009CA22D /* PhotoModelFileManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -191,9 +197,11 @@
 				B53781322CD922B4003A7E83 /* DownloadingImageView.swift in Sources */,
 				B585A81E2CD751FB00382A4F /* PhotoModelDataService.swift in Sources */,
 				B53781342CD92324003A7E83 /* ImageLoadingViewModel.swift in Sources */,
+				B5E9B1502CDB820B009CA22D /* PhotoModelFileManager.swift in Sources */,
 				B585A8062CD74DA100382A4F /* _7_DownloadingImagesApp.swift in Sources */,
 				B585A81C2CD750C600382A4F /* DownloadingImagesViewModel.swift in Sources */,
 				B585A8182CD74E3700382A4F /* DownloadingImages.swift in Sources */,
+				B5E9B14E2CDB8129009CA22D /* PhotoModelCacheManager.swift in Sources */,
 				B53781302CD92231003A7E83 /* DownloadingImagesRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
